@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dominika Banasiak 19292</title>
+    <meta charset = "UTF-8">
+    
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"   integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    
+    <script
+      src = "https://code.jquery.com/jquery-1.12.4.min.js"    
+      integrity = "sha384 - nvAa0 + 6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc / r8MhnRDZ"
+      crossorigin = "anonymous">
+    </script>
+    
+     <script      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"  integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"   crossorigin="anonymous">
+    </script>
+    
+    <script type="text/javascript" src="js/form.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/controllers.js"></script> 
+</head>
+
+  <body id="cialo">
+    <nav class = "navbar navbar-inverse navbar-fixed-top">
+      <div class = "container">
+        <div class = "navbar-header">
+ 
+          <button type = "button"
+                  class = "navbar-toggle collapsed"
+                  data-toggle = "collapse"
+                  data-target = "#navbar-collapse-1"
+                  ariaexpanded = "false">
+
+            <span class = "sr-only">toggle navigation</span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+          </button>
+
+          <a class = "navbar-brand" href = "#">
+
+            <div id = "logo">
+              <img src = "img/logo.png">
+            </div>
+          </a>
+        </div>
+
+        <div class = "collapse navbar-collapse" id = "navbar-collapse-1">
+
+          <ul class = "nav navbar-nav text-right">
+          <li class="active">
+          <a href="#main-page">
+          <span class="glyphicon glyphicon-home" aria-hidden="true">
+          </span> Strona główna</a>
+          </li>
+            
+          <li><a href="#page1"><span class="glyphicon glyphicon-globe" aria-hidden="true">
+          </span> Wiadomości</a>
+          </li>
+
+          <li><a href="#page3"><span class="glyphicon glyphicon-picture" aria-hidden="true">  
+          </span> Galeria</a>
+          </li>
+
+          <li><a href="#"><span class="glyphicon glyphicon-earphone" aria-hidden="true">  
+          </span> Kontakt</a>
+          </li>
+            
+          <li><a href="#"><span class="glyphicon glyphicon-barcode" aria-hidden="true">  
+          </span> Sklep</a>
+          </li>
+            
+          <li><a href="#page2"><span class="glyphicon glyphicon-pencil" aria-hidden="true">
+            
+          </span> Formularz</a>
+          </li>
+        </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+      </ul>
+
+          <ul class = "nav navbar-nav navbar-right">
+            <li>
+              <a href = "#"><span class = "glyphicon glyphicon-log-in"></span> login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <header>
+      <div class = "container">
+
+        <div id = "carouselID" class = "carousel slide" data-ride = "carousel">
+          <ol class = "carousel-indicators">
+            <li data-target = "#carouselID" data-slide-to = "0"
+                class = "active">
+            </li>
+
+          <li data-target = "#carouselID" data-slide-to = "1"></li>
+          <li data-target = "#carouselID" data-slide-to = "2"></li>
+          <li data-target="#carouselID" data-slide-to="3"></li>
+          <li data-target="#carouselID" data-slide-to="4"></li>
+          </ol>
+          
+           <div class="carousel-inner" role="listbox">
+             
+          <div class="item active">
+            <img src="img/zdj.jpg" 
+                 alt="zdj">
+        
+            <div class="carousel-caption">Dogs</div>
+          </div>
+             
+          <div class="item">
+            <img src="img/zdj1.png" alt="zdj1">
+            <div class="carousel-caption">Frisbee</div>
+          </div>
+             
+          <div class="item">
+            <img src="img/zdj2.png" alt="zdj2">
+            <div class="carousel-caption">Agility</div>
+          </div>
+             
+          <div class="item">
+            <img src="img/zdj3.png" alt="zdj3">
+            <div class="carousel-caption">Dog Diving</div>
+          </div>
+             
+          <div class="item">
+            <img src="img/zdj4.png" alt="zdj4">
+            <div class="carousel-caption">Love</div>
+          </div>
+        </div>
+         
+          <a class = "left carousel-control"
+             href = "#carouselID"
+             role = "button"
+             data-slide = "prev">
+            
+            <span class = "glyphicon glyphicon-chevron-left" ariahidden = "true"></span>
+            <span class = "sr-only">Cofnij</span>
+            </a>
+
+          <a class = "right carousel-control"
+             href = "#carouselID"
+             role = "button"
+             data-slide = "next">
+
+            <span class = "glyphicon glyphicon-chevron-right" ariahidden = "true"></span>
+            <span class = "sr-only">Następne</span>
+          </a> 
+        </div> 
+      </div>
+</header>
+ 
+    <section id = "main-page" class = "jumbotron" role = "alert">
+      <div class = "container">
+
+        <h1 id="nagl"> STRONA GŁÓWNA</h1>
+      <p>
+           Tak w skrócie... Jestem Dominika, a moją życiową pasją sensem życia i rzeczą, która sprawia, że codziennie rano mam ochotę wsatć z łóżka są psy. Tak właśnie, dobrze czytasz PSY! Dla jednych zwykłe powdórkowe burki, a dla mnie przyjaciele, partnerzy w pracy oraz sporcie. To od nich wszystko się zaczęło, dzięki nim znalazłam inne swoje pasje oraz odkryłam to kim naprawdę jestem.
+        Jeśli chcesz poznać bliżej mnie oraz mój świat to śmiało rozgość się !
+        Nie gryzę... a, przynajmniej nie przez internet. :) 
+        </p>
+      </div>
+    </section>
+      
+    <div class = "container text-center">    
+      <div class = "row content">
+      <div class = "col-sm-2 sidenav">
+
+        <div class = "well">
+            <p>Reklama</p>
+          </div>
+
+          <div class = "well">
+            <p>Reklama</p>
+          </div>
+
+          <div class = "well">
+            <p>Reklama</p>
+          </div>
+        </div>
+        
+       <div class="col-sm-8 text-left"> 
+      <table class="table">
+        <tr style="background-color:	  #4d0000;">
+            <td rowspan="2">L.p.</td>
+            <td colspan="2">Osoba</td>
+            <td rowspan="2">Info</td>
+        </tr>
+        <tr style="background-color:#660000">
+            <td>Imie</td>
+            <td>Nazwisko</td>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Andrzej</td>
+            <td>Kowalski</td>
+            <td>Student</td>
+        </tr>
+        <tr> 
+            <td>2.</td>
+            <td>Magda</td>
+            <td>Kessler</td>
+            <td>Student</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Robert</td>
+            <td>Łowicz</td>
+            <td>Absolwent</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Anna</td>
+            <td>Zaradna</td>
+            <td>Student</td>
+        </tr>
+    </table>
+    </div>
+ 
+         <div class = "col-sm-2 sidenav">
+
+         <div class = "well">
+            <p>Reklama</p>
+          </div>
+
+          <div class = "well">
+            <p>Reklama</p>
+          </div>
+
+          <div class = "well">
+            <p>Reklama</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+  
+    <section id="page1">
+     <div class="container">
+     <h1 id = nagl >Sponsorzy</h1>   
+     </div>
+   
+    <div class= "container">
+     <div class = "row">
+     <div class = "col-sm-4 text-center">
+       
+        <img src = "img/1.png" class = "img-circle center-block img-responsie"
+              alt = "logo"
+              height = 200
+              width  = 200> <h3 id=text >DogFrisbee</h3>
+        </div>
+
+        <div class = "col-sm-4 text-center">
+        <img src = "img/2.png" class = "img-circle center-block img-responsie"
+             alt = "logo"
+             height = 200
+             width  = 200> <h3 id = text >Floro</h3>
+        </div>
+
+        <div class = "col-sm-4 text-center">
+        <img src = "img/3.png" class = "img-circle center-block img-responsie"
+             alt = "logo"
+             height = 200
+             width = 200> <h3 id = text >Dream Agility Team</h3>
+        </div>
+      </div> 
+    </div>
+
+<section id="page3">
+    <div class="container">
+        <h1 class="text-danger" id="nagl"> Galeria</h1>    
+        </div>
+        </section>
+      
+      <div class="container" ng-controller="GalleryListCtrl">
+          <div class="row content text-center">
+              <p><b>Ilość elementów:</b> {{galleries.length}}</p> 
+            <div class="col-sm-4 text-center" ng-repeat="gallery in galleries">
+             <img src="{{gallery.thumbnailUrl}}" class="img-rounded center-block img-responsie" alt="" height=200 width=350>
+              <h3>{{gallery.title}}</h3>
+              <p><strong>Kiedy:</strong> {{gallery.when}}</p>
+            </div>
+          </div>
+      </div>   
+    
+<section id="page2">
+  <div class="container">
+    <form action="index.html#kontakt" method="post" onsubmit="return checkForm();" >
+      <fieldset>
+        <legend id = text>Formularz Kontaktowy</legend>
+
+        <div class="form-group" id="name">
+          <p id="errorName" class="hide">Podanie imienia jest wymagane!</p> 
+          <label for="contactName">Imię</label>
+          <input type="text" class="form-control" id="contactName" placeholder="Podaj imię"/>
+        </div>
+        
+        <div class="form-group" id="sur">
+          <p id="errorSur" class="hide">Podanie nazwiska jest wymagane!</p> 
+          <label for="contactSur">Nazwisko</label>
+          <input type="text" class="form-control" id="contactSur" placeholder="Podaj nazwisko"/>
+        </div>
+         
+        <div class="form-group" id="mail">
+          <p id="errorEmail" class="hide">Podanie emaila jest wymagane!</p> 
+          <label for="contactEmail">Email</label>
+          <input type="text" class="form-control" id="contactEmail" placeholder="Podaj email"/>
+        </div>
+
+        <div class="form-group" id="info"> 
+          <p id="errorInfo" class="hide" >Podanie informacji jest wymagane!</p> 
+          <label for="contactInfo">Pytanie</label>
+          <textarea class="form-control rounded-0" id="contactInfo" rows="6" placeholder="Tutaj wpisz swoje pytanie"></textarea>
+        </div>
+
+        <input type="submit" class="btn btn-danger" value="Wyślij"/>
+      </fieldset>
+    </form>     
+  </div>
+</section>
+    
+    <footer class = "container text-center">
+      <div class = "container">
+        <button type = "button"
+                class = "btn btn-danger"
+                data-toggle = "modal"
+                data-target = "#myModal">
+                Polityka Prywatności 
+        </button> 
+      </div> 
+    </footer>
+    
+    <div class = "modal fade" id = "myModal" tabindex = "-1" role = "dialog" aria-labelledby = "myModalLabel">
+      <div class = "modal-dialog" role = "document">
+        <div class = "modal-content">
+          <div class = "modal-header">
+              <button type = "button"
+                      class = "close"
+                      data-dismiss = "modal"
+                      arialabel = "Close">
+
+                      <span ariahidden = "true">
+                        &times;
+                      </span>
+              </button>
+
+              <h4 class = "modal-title" id = "myModalLabel">POLITYKA PRYWATNOŚCI</h4>
+          </div>
+
+          <div class = "modal-body">
+            Wchodząc na tą stronę, powierzasz mi swoje dane. Zdaje sobie sprawę, że to ogromna odpowiedzialność, ale zapewniam Cię, że nie musisz się o nie martwić. Robie wszystko co w mojej mocy, aby Twoje dane były bezpieczne w moich rękach.
+          </div> 
+        
+          <div class = "modal-footer">
+            <button type = "button"
+                    class = "btn btn-default"
+                    data-dismiss = "modal">
+                    Zamknij
+            </button>
+          </div> 
+        </div>
+      </div>
+    </div> 
+  </body>
+</html>
